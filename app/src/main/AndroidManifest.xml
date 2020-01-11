@@ -9,15 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".damnsimple.DamnSimpleActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".damnsimple.DamnSimpleActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".simpleretrofit.callback.SimpleRetrofitCallbackActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".simpleretrofit.rxjava.SimpleRetrofitRxJavaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".simpleretrofit.coroutine.SimpleRetrofitCoroutineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".asynchttp.AsyncHttpActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

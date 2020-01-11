@@ -17,37 +17,43 @@
             android:textAlignment="center"
             android:text="Android Networking Example" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_damn_simple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Damn Simple (URL)" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_asynctask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="AsyncTask" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_asynchttp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="AsyncHttp" />
 
-        <Button
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Retrofit" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_simple_retrofit_callback"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Simple Retrofit Callback" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_simple_retrofit_coroutine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Simple Retrofit Coroutine" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_simple_retrofit_rxjava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
