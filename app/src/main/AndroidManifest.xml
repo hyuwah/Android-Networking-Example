@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".damnsimple.DamnSimpleActivity"
-            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +25,12 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".simpleretrofit.coroutine.SimpleRetrofitCoroutineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".simpleurl.coroutine.SimpleUrlCoroutineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".simpleurl.asynctask.SimpleUrlAsyncTaskActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".asynchttp.AsyncHttpActivity"

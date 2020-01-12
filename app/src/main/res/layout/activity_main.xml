@@ -18,16 +18,16 @@
             android:text="Android Networking Example" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_damn_simple"
+            android:id="@+id/btn_simpleurl_coroutine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Damn Simple (URL)" />
+            android:text="Simple Url Coroutine" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_asynctask"
+            android:id="@+id/btn_simpleurl_asynctask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AsyncTask" />
+            android:text="Simple Url AsyncTask" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_asynchttp"

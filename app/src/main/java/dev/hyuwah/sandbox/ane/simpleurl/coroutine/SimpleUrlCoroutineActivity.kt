@@ -1,8 +1,7 @@
-package dev.hyuwah.sandbox.ane.damnsimple
+package dev.hyuwah.sandbox.ane.simpleurl.coroutine
 
 import android.os.Bundle
 import com.google.gson.Gson
-import dev.hyuwah.sandbox.ane.R
 import dev.hyuwah.sandbox.ane.common.data.Constants
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.ui.BaseActivity
@@ -11,11 +10,11 @@ import kotlinx.coroutines.*
 import java.lang.Exception
 import java.net.URL
 
-class DamnSimpleActivity : BaseActivity(), CoroutineScope by MainScope() {
+class SimpleUrlCoroutineActivity : BaseActivity(), CoroutineScope by MainScope() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        title = "Damn Simple (URL)"
+        title = "Simple URL Coroutine"
         setupRecyclerView()
 
         btn_load_data.setOnClickListener { loadData() }
