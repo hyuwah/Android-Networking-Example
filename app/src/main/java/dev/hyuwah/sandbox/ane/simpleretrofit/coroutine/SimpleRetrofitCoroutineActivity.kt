@@ -35,7 +35,7 @@ class SimpleRetrofitCoroutineActivity : BaseActivity(), CoroutineScope by MainSc
     private fun onSuccess(response: Response<List<UsersResponse>>) {
         hideLoading()
         if (response.isSuccessful) {
-            adapter.setData(response.body() ?: listOf())
+            adapter.setData(response.body().orEmpty())
         }
         // Handle Error http / business logic
     }
