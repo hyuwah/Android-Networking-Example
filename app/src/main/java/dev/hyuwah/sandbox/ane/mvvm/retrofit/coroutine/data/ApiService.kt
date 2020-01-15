@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.retrofit._data
+package dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.data
 
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import retrofit2.Response

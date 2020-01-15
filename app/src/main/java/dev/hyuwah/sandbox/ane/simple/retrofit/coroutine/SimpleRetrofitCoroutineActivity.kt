@@ -1,13 +1,11 @@
-package dev.hyuwah.sandbox.ane.simpleretrofit.coroutine
+package dev.hyuwah.sandbox.ane.simple.retrofit.coroutine
 
 import android.os.Bundle
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.ui.BaseActivity
-import dev.hyuwah.sandbox.ane.simpleretrofit._data.ApiServiceFactory
+import dev.hyuwah.sandbox.ane.simple.retrofit._data.ApiServiceFactory
 import kotlinx.android.synthetic.main.activity_network_example.*
 import kotlinx.coroutines.*
-import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.Response
 
 class SimpleRetrofitCoroutineActivity : BaseActivity(), CoroutineScope by MainScope() {

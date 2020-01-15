@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.simpleurl.asynctask
+package dev.hyuwah.sandbox.ane.simple.url.asynctask
 
 import android.os.AsyncTask
 import com.google.gson.Gson

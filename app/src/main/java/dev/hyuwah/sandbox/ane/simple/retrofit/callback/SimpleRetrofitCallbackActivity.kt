@@ -1,9 +1,9 @@
-package dev.hyuwah.sandbox.ane.simpleretrofit.callback
+package dev.hyuwah.sandbox.ane.simple.retrofit.callback
 
 import android.os.Bundle
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.ui.BaseActivity
-import dev.hyuwah.sandbox.ane.simpleretrofit._data.ApiServiceFactory
+import dev.hyuwah.sandbox.ane.simple.retrofit._data.ApiServiceFactory
 import kotlinx.android.synthetic.main.activity_network_example.*
 import retrofit2.Call
 import retrofit2.Callback

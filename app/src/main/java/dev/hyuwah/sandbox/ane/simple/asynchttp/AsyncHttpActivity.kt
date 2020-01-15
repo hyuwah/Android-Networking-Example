@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.asynchttp
+package dev.hyuwah.sandbox.ane.simple.asynchttp
 
 import android.os.Bundle
 import com.google.gson.Gson

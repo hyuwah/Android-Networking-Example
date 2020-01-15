@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.simpleurl.coroutine
+package dev.hyuwah.sandbox.ane.simple.url.coroutine
 
 import android.os.Bundle
 import com.google.gson.Gson

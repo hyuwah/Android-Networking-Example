@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.simpleretrofit._data
+package dev.hyuwah.sandbox.ane.simple.retrofit._data
 
 import dev.hyuwah.sandbox.ane.common.data.Constants
 import retrofit2.Retrofit

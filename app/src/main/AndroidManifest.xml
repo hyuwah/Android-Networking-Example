@@ -18,22 +18,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".simpleretrofit.callback.SimpleRetrofitCallbackActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.callback.SimpleRetrofitCallbackActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".simpleretrofit.rxjava.SimpleRetrofitRxJavaActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.rxjava.SimpleRetrofitRxJavaActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".simpleretrofit.coroutine.SimpleRetrofitCoroutineActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.coroutine.SimpleRetrofitCoroutineActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".simpleurl.coroutine.SimpleUrlCoroutineActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.url.coroutine.SimpleUrlCoroutineActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".simpleurl.asynctask.SimpleUrlAsyncTaskActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.url.asynctask.SimpleUrlAsyncTaskActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".asynchttp.AsyncHttpActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.asynchttp.AsyncHttpActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".mvvm.retrofit.coroutine.presentation.RetrofitCoroutineActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

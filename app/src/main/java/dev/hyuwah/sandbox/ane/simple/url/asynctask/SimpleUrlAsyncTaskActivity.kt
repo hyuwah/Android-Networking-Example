@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.simpleurl.asynctask
+package dev.hyuwah.sandbox.ane.simple.url.asynctask
 
 import android.os.Bundle
 import dev.hyuwah.sandbox.ane.common.data.Constants
