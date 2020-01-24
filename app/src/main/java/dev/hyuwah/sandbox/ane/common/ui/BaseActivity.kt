@@ -34,4 +34,8 @@ abstract class BaseActivity: AppCompatActivity() {
         rv_user_list.visibility = View.VISIBLE
     }
 
+    protected fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
 }

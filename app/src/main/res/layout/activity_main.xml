@@ -6,16 +6,22 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_margin="12dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Android Networking Example" />
+            android:text="Simple"
+            android:textAlignment="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simple_asynchttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple AsyncHttp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_simpleurl_coroutine"
@@ -28,18 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Simple Url AsyncTask" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_asynchttp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="AsyncHttp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Retrofit" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_simple_retrofit_callback"
@@ -58,6 +52,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Simple Retrofit RxJava" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard"
+            android:textAlignment="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_standard_mvp_coroutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard MVP Coroutine" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_standard_mvp_rxjava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard MVP RxJava" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_standard_mvvm_coroutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard MVVM Coroutine" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_standard_mvvm_rxjava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standard MVVM RxJava" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced"
+            android:textAlignment="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_advanced_coroutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced Coroutine" />
 
     </LinearLayout>
 

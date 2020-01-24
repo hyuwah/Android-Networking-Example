@@ -47,6 +47,7 @@ class SimpleRetrofitRxJavaActivity : BaseActivity() {
     private fun onError(t: Throwable) {
         hideLoading()
         // Handle Error Exception
+        showToast(t.message ?: "Unknown Exception")
     }
 
     override fun onDestroy() {

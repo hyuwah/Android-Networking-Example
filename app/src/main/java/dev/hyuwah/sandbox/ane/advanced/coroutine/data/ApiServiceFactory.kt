@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.data
+package dev.hyuwah.sandbox.ane.advanced.coroutine.data
 
 import dev.hyuwah.sandbox.ane.common.data.Constants
 import retrofit2.Retrofit

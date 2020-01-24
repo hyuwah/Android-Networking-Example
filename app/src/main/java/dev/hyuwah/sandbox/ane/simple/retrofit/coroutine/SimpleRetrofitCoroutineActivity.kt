@@ -34,12 +34,15 @@ class SimpleRetrofitCoroutineActivity : BaseActivity(), CoroutineScope by MainSc
         hideLoading()
         if (response.isSuccessful) {
             adapter.setData(response.body().orEmpty())
+        } else {
+            // Handle Error http / business logic
+            showToast("HTTP Error: " + response.code().toString())
         }
-        // Handle Error http / business logic
     }
 
     private fun onError(t: Throwable) {
         hideLoading()
         // Handle Error Exception
+        showToast(t.message ?: "Unknown Exception")
     }
 }

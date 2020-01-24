@@ -31,6 +31,7 @@ class SimpleUrlCoroutineActivity : BaseActivity(), CoroutineScope by MainScope()
                 adapter.setData(userList)
             } catch (e: Exception) {
                 // Handle error exception
+                showToast(e.message ?: "Unknown Exception")
             }
             hideLoading()
         }

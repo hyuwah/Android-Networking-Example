@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.presentation
+package dev.hyuwah.sandbox.ane.advanced.coroutine.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.domain.Result
-import dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.data.ApiServiceFactory
-import dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.data.RepositoryImpl
-import dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.domain.UsersUseCase
+import dev.hyuwah.sandbox.ane.advanced.coroutine.data.ApiServiceFactory
+import dev.hyuwah.sandbox.ane.advanced.coroutine.data.RepositoryImpl
+import dev.hyuwah.sandbox.ane.advanced.coroutine.domain.UsersUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -22,6 +22,9 @@ class RetrofitCoroutineViewModel : ViewModel() {
 
     private val _userList = MutableLiveData<List<UsersResponse>>(mutableListOf())
     val userList = _userList as LiveData<List<UsersResponse>>
+
+    private val _errorMessage = MutableLiveData<String>()
+    val errorMessage = _errorMessage as LiveData<String>
 
     fun loadData() {
         viewModelScope.launch(Dispatchers.IO) {
@@ -40,7 +43,7 @@ class RetrofitCoroutineViewModel : ViewModel() {
     }
 
     private fun handleError(exception: Exception) {
-
+        _errorMessage.value = exception.message
     }
 
 }

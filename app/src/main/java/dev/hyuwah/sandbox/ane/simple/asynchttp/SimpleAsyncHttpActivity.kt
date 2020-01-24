@@ -10,7 +10,7 @@ import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_network_example.*
 
-class AsyncHttpActivity : BaseActivity() {
+class SimpleAsyncHttpActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +41,7 @@ class AsyncHttpActivity : BaseActivity() {
                 error: Throwable
             ) {
                 hideLoading()
+                showToast("Error ${statusCode}: " + error.message)
             }
 
         })

@@ -42,12 +42,15 @@ class SimpleRetrofitCallbackActivity : BaseActivity() {
         hideLoading()
         if (response.isSuccessful) {
             adapter.setData(response.body() ?: listOf())
+        } else {
+            // Handle Error http / business logic
+            showToast("HTTP Error: " + response.code().toString())
         }
-        // Handle Error http / business logic
     }
 
     private fun onError(t: Throwable) {
         hideLoading()
         // Handle Error Exception
+        showToast(t.message ?: "Unknown Exception")
     }
 }

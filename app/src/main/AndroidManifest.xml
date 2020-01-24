@@ -33,10 +33,22 @@
             android:name="dev.hyuwah.sandbox.ane.simple.url.asynctask.SimpleUrlAsyncTaskActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.asynchttp.AsyncHttpActivity"
+            android:name="dev.hyuwah.sandbox.ane.simple.asynchttp.SimpleAsyncHttpActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mvvm.retrofit.coroutine.presentation.RetrofitCoroutineActivity"
+            android:name="dev.hyuwah.sandbox.ane.standard.mvvm.coroutine.StandardMvvmCoroutineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="dev.hyuwah.sandbox.ane.standard.mvvm.rxjava.StandardMvvmRxjavaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="dev.hyuwah.sandbox.ane.standard.mvp.coroutine.StandardMvpCoroutineActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="dev.hyuwah.sandbox.ane.standard.mvp.rxjava.StandardMvpRxjavaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="dev.hyuwah.sandbox.ane.advanced.coroutine.presentation.RetrofitCoroutineActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

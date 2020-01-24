@@ -1,4 +1,4 @@
-package dev.hyuwah.sandbox.ane.mvvm.retrofit.coroutine.domain
+package dev.hyuwah.sandbox.ane.advanced.coroutine.domain
 
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
 import dev.hyuwah.sandbox.ane.common.domain.Result
