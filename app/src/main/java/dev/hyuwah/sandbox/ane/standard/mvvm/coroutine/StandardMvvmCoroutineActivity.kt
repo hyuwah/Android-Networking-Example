@@ -1,7 +1,6 @@
 package dev.hyuwah.sandbox.ane.standard.mvvm.coroutine
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import dev.hyuwah.sandbox.ane.common.data.response.UsersResponse
