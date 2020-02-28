@@ -31,7 +31,9 @@ class StandardMvvmCoroutineViewModel : ViewModel() {
                     }
                 }
             } catch (t: Throwable) {
-                _errorMessage.postValue(t.message ?: "Unknown Exception")
+                withContext(Dispatchers.Main) {
+                    _errorMessage.value = t.message ?: "Unknown Exception"
+                }
             }
         }
     }

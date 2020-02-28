@@ -3,6 +3,7 @@
     package="dev.hyuwah.sandbox.ane">
 
     <application
+        android:name=".ExampleApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,19 +19,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.callback.SimpleRetrofitCallbackActivity"
+            android:name="dev.hyuwah.sandbox.ane.advanced.pepe.presentation.ExampleActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".simple.retrofit.callback.SimpleRetrofitCallbackActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.rxjava.SimpleRetrofitRxJavaActivity"
+            android:name=".simple.retrofit.rxjava.SimpleRetrofitRxJavaActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.retrofit.coroutine.SimpleRetrofitCoroutineActivity"
+            android:name=".simple.retrofit.coroutine.SimpleRetrofitCoroutineActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.url.coroutine.SimpleUrlCoroutineActivity"
+            android:name=".simple.url.coroutine.SimpleUrlCoroutineActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="dev.hyuwah.sandbox.ane.simple.url.asynctask.SimpleUrlAsyncTaskActivity"
+            android:name=".simple.url.asynctask.SimpleUrlAsyncTaskActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name="dev.hyuwah.sandbox.ane.simple.asynchttp.SimpleAsyncHttpActivity"
