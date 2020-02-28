@@ -25,6 +25,7 @@ Each example has it's own activity, under certain package name reflecting its ca
         - rxjava
 - Advanced
     - coroutine
+    - pepe
 
 #### Common
 
@@ -39,20 +40,30 @@ Common code for all example, contains :
 
 #### Simple
 
-The aim here is just to straightforwardly fetch a remote data on various networking library that are available and various async work method (callback, rx, coroutine), using the minimum amount of effort to setup the networking code.
+The aim here is just to straightforwardly fetch a remote data on various networking library that are available and various async work method (asynctask, callback, rx, coroutine), using the minimum amount of effort to setup the networking code.
 
-#### Standard (WIP)
+#### Standard
 
-This category uses Retrofit as networking library and adds basic separation of concerns with presentational pattern, in this case MVP and MVVM. 
+This category follows basic separation of concerns with presentational pattern, in this case MVP and MVVM. It uses Retrofit as networking library and Rxjava or Coroutine for async work.
 
-#### Advanced (WIP)
+#### Advanced
 
-This applies architectural pattern (Uncle Bob's Clean Architecture) along with MVVM pattern, Retrofit for networking & Coroutine to do async work.
+This category took the standard to the next level. It applies architectural pattern which separate each responsibility into its own layer. Currently this contains two sub-category:
+
+1. Advanced Coroutine (without DI), which follows Uncle Bob's Clean Architecture along with MVVM pattern, Retrofit for networking & Coroutine to do async work.
+2. _Pepe_ Arch, a homebrew architecture used by one of the leading online travel agent company in Indonesia
 
 
 ### TODO
 
-- Fast Android Networking
-- Fuel
-- more...
+More Network Client
+- [ ] Fast Android Networking
+- [ ] Fuel
+- [ ] more...
+
+More Case
+- [ ] Consecutive / chained network calls
+- [ ] Proper REST Api HTTP code handling
+- [ ] Syntactic Sugar with extensions for some featured example
+- [ ] Offline-first app (Single Source of Truth data)
 
